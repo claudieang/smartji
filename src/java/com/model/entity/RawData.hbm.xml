@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 13, 2017 4:22:07 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.model.entity.RawData" table="raw_data" catalog="smartji">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <timestamp name="timestamp" column="timestamp" />
+        <property name="coopId" type="int">
+            <column name="coop_id" not-null="true" />
+        </property>
+        <property name="temp1" type="int">
+            <column name="temp1" not-null="true" />
+        </property>
+        <property name="temp2" type="int">
+            <column name="temp2" not-null="true" />
+        </property>
+        <property name="humid1" type="int">
+            <column name="humid1" not-null="true" />
+        </property>
+        <property name="humid2" type="int">
+            <column name="humid2" not-null="true" />
+        </property>
+        <property name="light" type="boolean">
+            <column name="light" not-null="true" />
+        </property>
+        <property name="heatindex1" type="int">
+            <column name="heatindex1" not-null="true" />
+        </property>
+        <property name="heatindex2" type="int">
+            <column name="heatindex2" not-null="true" />
+        </property>
+        <property name="email" type="boolean">
+            <column name="email" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
